@@ -1,0 +1,26 @@
+# AWS Overview
+
+## What is AWS?
+Amazon Web Services (AWS) is a comprehensive cloud computing platform offering compute, storage, database, and networking services.
+
+## Key Services
+- **EC2**: Virtual servers in the cloud
+- **S3**: Scalable object storage
+- **RDS**: Managed relational databases
+- **Lambda**: Serverless computing
+- **CloudFront**: Content delivery network
+
+## Benefits
+- Pay-as-you-go pricing
+- Global infrastructure
+- High availability and scalability
+- Security and compliance
+
+## Getting Started
+1. Create an AWS account
+2. Configure AWS CLI credentials
+3. Launch your first resource
+4. Monitor with CloudWatch
+
+## Learn More
+Visit [AWS Documentation](https://docs.aws.amazon.com/)

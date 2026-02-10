@@ -4,4 +4,4 @@
 *.env
 .vscode
 package-lock.json
-/src/notes/*
+/src/notes/*.md
