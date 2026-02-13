@@ -2,6 +2,7 @@ import fs from 'fs/promises'
 import path from 'path'
 import matter from 'gray-matter'
 import { meiliClient } from '../infra/meilisearch.client.js'
+import 'dotenv/config'
 
 const NOTES_DIR = path.resolve('src/notes')
 
@@ -27,11 +28,14 @@ async function run() {
 
             const { data, content } = matter(raw)
             let note_id = data.id[0]
+            let contentSplited = content.split('```')
+            contentSplited.splice(0,2)
+            contentSplited = contentSplited.join('')
             docs.push({
                 id: note_id,
                 title: data.title ?? file,
                 tags: data.tags ?? [],
-                content
+                content: contentSplited
             })
             
             // console.log(`Processando arquivo ${docs}...`)
